@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #111;
+}
+section {
+  width: 90%;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+  color: #f1f1f1;
+}
+h1 {
+  padding: 15px 0;
+  font-size: 36px;
+}
+.details p {
+  padding: 0 15px;
+  font-size: 17px;
+}
+.intro {
+  width: 540px;
+  height: 1170px;
+}
