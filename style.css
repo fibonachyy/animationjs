@@ -42,6 +42,7 @@ body {
   align-items: center;
   font-family: Lobester;
   grid-template-columns: 1fr 100px;
+  z-index: 1;
 }
 .navbar h3 {
   padding: 0 40px !important;
@@ -86,6 +87,6 @@ section {
   word-spacing: 1px;
 }
 .intro {
-  height: 100%;
+  height: calc(100% - 70px);
   width: 550px;
 }

@@ -2,10 +2,11 @@ const firstSection = document.querySelector("#sec1");
 const secoundSection = document.querySelector("#sec2");
 const therdSection = document.querySelector("#sec3");
 const mainSection = document.querySelector(".container");
+const navBar = document.querySelector(".navbar");
 let myHover1 = new hoverEffect({
   parent: therdSection,
   intensity: 0.2,
-  image1: "../dist/852939.jpg",
+  image1: "../dist/852940.jpg",
   image2: "../dist/852939.jpg",
   displacementImage: "../dist/heightMap.png",
   imagesRatio: 960 / 540
@@ -24,7 +25,7 @@ let myHover3 = new hoverEffect({
   parent: firstSection,
   intensity: 0.2,
   image1: "../dist/848026.jpg",
-  image2: "../dist/849480.jpg",
+  image2: "../dist/783887.jpg",
   displacementImage: "../dist/heightMap.png",
   imagesRatio: 2280 / 1080,
   angle: Math.PI / 8
@@ -68,6 +69,13 @@ function init() {
         { background: colors[currentPgae].bg },
         { background: colors[nextIndex].bg },
         "-=1"
+      )
+      .fromTo(
+        navBar,
+        !instart ? 0.6 : 0,
+        { background: colors[currentPgae].bg },
+        { background: colors[nextIndex].bg },
+        "-=6"
       )
       .fromTo(
         pages[nextIndex],
@@ -118,7 +126,7 @@ init();
 
 function throttle(func, limit) {
   let inThrottle;
-  return function() {
+  return function () {
     const args = arguments;
     const context = this;
     if (!inThrottle) {
